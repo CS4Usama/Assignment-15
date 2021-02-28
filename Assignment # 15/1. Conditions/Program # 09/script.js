@@ -8,5 +8,4 @@ function checkChar() {
     } else {
         document.getElementById("ans").innerHTML = char + " is a Special Character.";
     }
-
 }
