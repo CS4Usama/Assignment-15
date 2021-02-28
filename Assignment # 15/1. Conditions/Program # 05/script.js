@@ -6,5 +6,4 @@ function number() {
     } else {
         document.getElementById("ans").innerHTML = num + " is an Odd Number.";
     }
-
 }
