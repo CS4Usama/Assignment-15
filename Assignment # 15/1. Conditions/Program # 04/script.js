@@ -6,5 +6,4 @@ function divNum() {
     } else {
         document.getElementById("ans").innerHTML = num + " is not Divisible by 5 and 11.";
     }
-
 }
