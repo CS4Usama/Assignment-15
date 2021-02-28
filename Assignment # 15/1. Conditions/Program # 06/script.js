@@ -6,5 +6,4 @@ function isLeap() {
     } else {
         document.getElementById("ans").innerHTML = num + " is not a Leap Year.";
     }
-
 }
