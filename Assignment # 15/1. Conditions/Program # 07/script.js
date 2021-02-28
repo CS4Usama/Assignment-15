@@ -6,5 +6,4 @@ function isAlpha() {
     } else {
         document.getElementById("ans").innerHTML = char + " is not an Alphabet.";
     }
-
 }
