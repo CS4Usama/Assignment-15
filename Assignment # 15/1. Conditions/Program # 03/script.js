@@ -10,5 +10,4 @@ function number() {
     } else {
         document.getElementById("ans").innerHTML = "Please Enter a Number.";
     }
-
 }
