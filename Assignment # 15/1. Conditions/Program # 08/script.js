@@ -6,5 +6,4 @@ function isVowel() {
     } else {
         document.getElementById("ans").innerHTML = char + " is a Consonant.";
     }
-
 }
