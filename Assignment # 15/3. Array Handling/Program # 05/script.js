@@ -14,22 +14,24 @@ function largest2ndElement() {
     }
     // process the last element of the array because this doesn't have a comma at the last.
     intArray.push(arrElem);
+    
+    let max2nd = 0;
+    let max = Math.max.apply(null, intArray);
+    /* Another Method: */
+    // intArray.splice(intArray.indexOf(max), 1);
+    // let max2nd = Math.max(...intArray);
 
-
-    /* Process to find 2nd Largest Element from the Array */
-    let max = intArray[0], res = 0;
+    intArray.sort(function(a,b) {return b-a;});   // Sort Array in Descending Order
     for (let i = 0; i < intArray.length; i++) {
-        if(max < intArray[i]) {
-            // [res, max] = [max, intArray[i]]
-            
-            res = max;  // store previous state of max in another variable
-            max = intArray[i];
+        if(intArray[i] < max) {
+            max2nd = intArray[i]
+            break;
         }
     }
 
-    if(res === 0) {
+    if(max2nd === 0) {
         document.getElementById("ans").innerHTML = "There is no 2nd Largest Element in the Array";
     } else {
-        document.getElementById("ans").innerHTML = "2nd Largest Element in the Array: " + res;
+        document.getElementById("ans").innerHTML = "2nd Largest Element in the Array: " + max2nd;
     }
 }
