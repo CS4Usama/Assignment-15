@@ -16,7 +16,8 @@ function largest2ndElement() {
     intArray.push(arrElem);
     
     let max2nd = 0;
-    let max = Math.max.apply(null, intArray);
+    let max = Math.max.apply(null, intArray);   // It will find Largest Element of the Array
+    
     /* Another Method: */
     // intArray.splice(intArray.indexOf(max), 1);
     // let max2nd = Math.max(...intArray);
